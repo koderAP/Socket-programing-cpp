@@ -34,15 +34,10 @@ This repository contains a modular implementation of client-server communication
 └── plot.png                   # Completion Time Plots
 ```
 
-# Socket Programming Project
 
-This repository contains implementations of multiple client-server communication protocols and scheduling algorithms using TCP sockets in C++. The project is divided into four parts:
-
----
 
 ## Part 1: Word Counting Client
 
-###Description
 Implements a TCP client-server system where the client reads a list of words from a file hosted on the server and counts the frequency of each word. The server responds with a fixed number (`k`) of words starting from a requested offset, sending `p` words per packet.
 
 ###  Files
@@ -62,7 +57,7 @@ make plot        # Outputs a plot of average completion time vs packet size
 
 ## Part 2: Concurrent Clients with Word Counting
 
-###Description
+
 Extends the server to handle multiple concurrent TCP clients using multithreading. Measures the impact of concurrency on average completion time per client.
 
 ###  Files
@@ -82,7 +77,7 @@ make plot        # Outputs a plot of completion time per client vs number of cli
 
 ## Part 3: Grumpy Server with Decentralized Scheduling
 
-###Description
+
 Implements a decentralized communication model with a server that prefers to serve one request at a time. Clients handle contention using the following protocols:
 - Slotted ALOHA
 - Binary Exponential Backoff (BEB)
@@ -110,7 +105,7 @@ make plot          # Outputs a plot comparing all three protocols
 
 ## Part 4: Friendly Server with Centralized Scheduling
 
-###Description
+
 Implements centralized server scheduling using:
 - FIFO (First In First Out)
 - Fair Scheduling (Round Robin)
